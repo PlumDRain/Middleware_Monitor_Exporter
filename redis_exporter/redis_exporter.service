@@ -1,0 +1,9 @@
+[Unit]
+Description=redis_exporter
+After=network.target
+[Service]
+Environment='REDIS_PASSWORD=haRes(8253Yq'
+Restart=on-failure
+ExecStart=/data/monitor/redis_exporter/redis_exporter 
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=kafka_exporter
+After=network.target
+[Service]
+Restart=on-failure
+ExecStart=/data/monitor/kafka_exporter/kafka_exporter \
+--kafka.server=10.102.168.4:9092 \
+--log.level=error
+[Install]
+WantedBy=multi-user.target

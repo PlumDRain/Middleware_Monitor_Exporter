@@ -1,0 +1,8 @@
+[Unit]
+Description=mysqld_exporter
+After=network.target
+[Service]
+Restart=on-failure
+ExecStart=/data/monitor/mysqld_exporter/mysqld_exporter --config.my-cnf=/data/monitor/mysqld_exporter/my.cnf
+[Install]
+WantedBy=multi-user.target

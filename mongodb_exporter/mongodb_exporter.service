@@ -1,0 +1,9 @@
+[Unit]
+Description=mongodb_exporter
+After=network.target
+[Service]
+Environment='MONGODB_URI=mongodb://idcdb:Aop!#GWQ2021@127.0.0.1:27017'
+Restart=on-failure
+ExecStart=/data/monitor/mongodb_exporter/mongodb_exporter  --log.level=warn
+[Install]
+WantedBy=multi-user.target
