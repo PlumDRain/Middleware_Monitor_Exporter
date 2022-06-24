@@ -301,7 +301,7 @@ scrape_configs:
 
 remote_write:
   - name: Tnebula_prometheus # Remote write 的名称
-    url: http://106.55.235.73:29090/api/v1/prom/write  # 从 Prometheus 基本信息中获取 Remote Write 地址
+    url: http://[ip:port]/api/v1/prom/write  # 从 Prometheus 基本信息中获取 Remote Write 地址
     remote_timeout: 60s # 根据实际情况设置
     bearer_token: KBsSRbMlrmrtWxxpbTbV # 从 Prometheus 基本信息中获取 Token 信息
 ```
