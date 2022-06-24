@@ -14,8 +14,6 @@ https://github.com/prometheus/prometheus
 这里使用的是 prometheus-2.36.2.linux-amd64.tar.gz
 ```
 
-![packagepng](file:///C:/Users/v_habzhang/Desktop/小记/prometheus/二进制-prometheus/images/package.png?msec=1656035540658)
-
 ### 2.2 上传服务器
 
 ```shell
